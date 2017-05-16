@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
 	s.name                = 'paralleldots'
-	s.version              = '0.0.2'
+	s.version              = '0.0.3'
 	s.date                 = '2017-04-10'
 	s.summary              = "Ruby Wrapper for ParallelDots APIs"
 	s.description          = "Ruby Wrapper for ParallelDots APIs"
