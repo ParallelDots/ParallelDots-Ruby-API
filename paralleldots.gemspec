@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
 	s.name                = 'paralleldots'
-	s.version              = '3.0.2'
+	s.version              = '3.1.0'
 	s.date                 = '2017-04-10'
 	s.summary              = "Ruby Wrapper for ParallelDots APIs"
 	s.description          = "Ruby Wrapper for ParallelDots APIs"
@@ -15,4 +15,5 @@ Gem::Specification.new do |s|
 
 	s.add_runtime_dependency( 'rest-client', '~> 1.8', '>=1.8.0' )
 	s.add_runtime_dependency( 'parseconfig', '~> 1.0', '>=1.0.8' )
+	s.required_ruby_version = '>= 2.3.1'
 end
