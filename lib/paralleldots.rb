@@ -128,6 +128,17 @@ def phrase_extractor( text )
 	return response
 end
 
+def language_detection( text )
+	api_key  = get_api_key
+	valid    = check( api_key, text )
+	if valid != true then
+		return valid
+	end
+	response = RestClient.post "https://apis.paralleldots.com/v3/language_detection", { api_key: api_key, text: text }
+	response = JSON.parse( response )
+	return response
+end
+
 def text_parser( text )
 	api_key  = get_api_key
 	valid    = check( api_key, text )
