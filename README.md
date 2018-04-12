@@ -77,6 +77,7 @@ Examples
 	> category  = { "finance": [ "markets", "economy", "shares" ], "world politics": [ "diplomacy", "UN", "war" ] }
 	> lang_code = "fr"
 	> lang_text = "C'est un environnement très hostile, si vous choisissez de débattre ici, vous serez vicieusement attaqué par l'opposition."
+	> url       = "http://i.imgur.com/klb812s.jpg"
 
 	> puts( "\nAbuse" )
 	> puts( abuse( text ) )
