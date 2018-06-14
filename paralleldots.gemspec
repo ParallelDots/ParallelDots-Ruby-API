@@ -1,11 +1,11 @@
 Gem::Specification.new do |s|
 	s.name                = 'paralleldots'
-	s.version              = '3.2.5'
-	s.date                 = '2017-04-10'
+	s.version              = '3.2.6'
+	s.date                 = '2017-06-14'
 	s.summary              = "Ruby Wrapper for ParallelDots APIs"
 	s.description          = "Ruby Wrapper for ParallelDots APIs"
-	s.authors              = [ "Meghdeep Ray" ]
-	s.email                = 'meghdeepr@paralleldots.com'
+	s.authors              = [ "Manish Kumar" ]
+	s.email                = 'manish@paralleldots.com'
 	s.files                = [ "lib/paralleldots.rb", "lib/config.rb" ]
 	s.extra_rdoc_files     = [ 'README.md' ]
 	s.homepage             = 'http://rubygems.org/gems/paralleldots'

@@ -160,3 +160,69 @@ def usage()
 	response = JSON.parse( response )
 	return response
 end
+
+
+def batch_intent( data )
+	api_key  = get_api_key()
+	response = RestClient.post "https://apis.paralleldots.com/v3/intent_batch", { "data": data.to_json, "api_key": api_key }
+	response = JSON.parse( response )
+	return response	
+end
+
+def batch_abuse( data )
+	api_key  = get_api_key()
+	response = RestClient.post "https://apis.paralleldots.com/v3/abuse_batch", { "data": data.to_json, "api_key": api_key }
+	response = JSON.parse( response )
+	return response
+end
+
+def batch_ner( data )
+	api_key  = get_api_key()
+	response = RestClient.post "https://apis.paralleldots.com/v3/ner_batch", { "data": data.to_json, "api_key": api_key }
+	response = JSON.parse( response )
+	return response
+end
+
+def batch_taxonomy( data )
+	api_key  = get_api_key()
+	response = RestClient.post "https://apis.paralleldots.com/v3/taxonomy_batch", { "data": data.to_json, "api_key": api_key }
+	response = JSON.parse( response )
+	return response	
+end
+
+def batch_language_detection( data )
+	api_key  = get_api_key()
+	response = RestClient.post "https://apis.paralleldots.com/v3/language_detection_batch", { "data": data.to_json, "api_key": api_key }
+	response = JSON.parse( response )
+	return response		
+end
+
+def batch_phrase_extractor( data )
+	api_key  = get_api_key()
+	response = RestClient.post "https://apis.paralleldots.com/v3/phrase_extractor_batch", { "data": data.to_json, "api_key": api_key }
+	response = JSON.parse( response )
+	return response
+end
+
+def batch_keywords( data )
+	api_key  = get_api_key()
+	response = RestClient.post "https://apis.paralleldots.com/v3/keywords_batch", { "data": data.to_json, "api_key": api_key }
+	response = JSON.parse( response )
+	return response
+end
+
+def batch_sentiment( data )
+	api_key  = get_api_key()
+	response = RestClient.post "https://apis.paralleldots.com/v3/sentiment_batch", { "data": data.to_json, "api_key": api_key }
+	response = JSON.parse( response )
+	return response
+end
+
+def batch_emotion( data )
+	api_key  = get_api_key()
+	response = RestClient.post "https://apis.paralleldots.com/v3/emotion_batch", { "data": data.to_json, "api_key": api_key }
+	response = JSON.parse( response )
+	return response
+end
+
+# puts(batch_sentiment(["you are ass hole","people loves fucking weak","sachin is good player"]))
