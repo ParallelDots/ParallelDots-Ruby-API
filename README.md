@@ -56,6 +56,7 @@ Supported APIs:
 - Facial Emotion
 - Intent
 - Keywords
+- Sarcasm
 - Multilanguage Keywords ( Supports Multiple Languages )
 - Named Entity Extraction/Recognition ( NER )
 - Not Safe For Work ( NSFW Image Classifier )
