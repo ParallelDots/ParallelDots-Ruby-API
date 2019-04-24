@@ -10,9 +10,9 @@ def sentiment( text, lang_code= "en" )
 	return response
 end
 
-def ner( text )
+def ner( text,lang_code = "en" )
 	api_key  = get_api_key
-	response = RestClient.post "https://apis.paralleldots.com/v4/ner", { api_key: api_key, text: text }
+	response = RestClient.post "https://apis.paralleldots.com/v4/ner", { api_key: api_key, text: text, lang_code: lang_code }
 	response = JSON.parse( response )
 	return response
 end
