@@ -89,6 +89,11 @@ Examples
 	> puts( "\nCustom Classifier" )
 	> custom_classifier( text, category ) 
 	
+	> puts( "\nSarcasm" )
+	> sarcasm( text )
+
+	> puts( "\nSarcasm - Lang: Fr". )
+	> sarcasm( lang_text, lang_code )
 
 	> puts( "\nEmotion" )
 	> emotion( text )
@@ -118,7 +123,10 @@ Examples
 	> multilang_keywords( lang_text, lang_code )
 
 	> puts( "\nNER" )
-	> ner( text )
+	> ner( text)
+
+	> puts( "\nMultilang NER" )
+	> ner( text,"en")
 
 	> puts( "\nNSFW" )
 	> nsfw( path )
@@ -154,7 +162,5 @@ Examples
 	> puts( "\nTaxonomy" )
 	> taxonomy( text ) 
 
-	> puts( "\nText Parser" )
-	> text_parser( text ) 
 	
 	> usage()
