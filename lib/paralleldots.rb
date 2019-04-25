@@ -190,9 +190,9 @@ def batch_abuse( data )
 	return response
 end
 
-def batch_ner( data )
+def batch_ner( data, lang_code="en")
 	api_key  = get_api_key()
-	response = RestClient.post "https://apis.paralleldots.com/v4/ner_batch", { "text": data.to_json, "api_key": api_key }
+	response = RestClient.post "https://apis.paralleldots.com/v4/ner_batch", { "text": data.to_json, "api_key": api_key, "lang_code":lang_code}
 	response = JSON.parse( response )
 	return response
 end
@@ -225,23 +225,23 @@ def batch_keywords( data )
 	return response
 end
 
-def batch_sentiment( data )
+def batch_sentiment( data, lang_code="en")
 	api_key  = get_api_key()
-	response = RestClient.post "https://apis.paralleldots.com/v4/sentiment_batch", { "text": data.to_json, "api_key": api_key }
+	response = RestClient.post "https://apis.paralleldots.com/v4/sentiment_batch", { "text": data.to_json, "api_key": api_key, "lang_code":lang_code}
 	response = JSON.parse( response )
 	return response
 end
 
-def batch_emotion( data )
+def batch_emotion( data, lang_code="en")
 	api_key  = get_api_key()
-	response = RestClient.post "https://apis.paralleldots.com/v4/emotion_batch", { "text": data.to_json, "api_key": api_key }
+	response = RestClient.post "https://apis.paralleldots.com/v4/emotion_batch", { "text": data.to_json, "api_key": api_key, "lang_code":lang_code}
 	response = JSON.parse( response )
 	return response
 end
 
-def batch_sarcasm( data )
+def batch_sarcasm( data, lang_code="en")
 	api_key  = get_api_key()
-	response = RestClient.post "https://apis.paralleldots.com/v4/sarcasm_batch", { "text": data.to_json, "api_key": api_key }
+	response = RestClient.post "https://apis.paralleldots.com/v4/sarcasm_batch", { "text": data.to_json, "api_key": api_key, "lang_code":lang_code}
 	response = JSON.parse( response )
 	return response
 end
