@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
 	s.name                = 'paralleldots'
-	s.version              = '3.2.9'
+	s.version              = '3.2.10'
 	s.date                 = '2019-03-28'
 	s.summary              = "Ruby Wrapper for ParallelDots APIs"
 	s.description          = "Ruby Wrapper for ParallelDots APIs"
@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
 
 	s.post_install_message = "\nInstallation Comlete !\nGet your free API key: https://www.paralleldots.com/text-analysis-apis\nDocs: https://www.paralleldots.com/docs/\nHappy Coding !\n\n"
 
-	s.add_runtime_dependency( 'rest-client', '~> 1.8', '>=1.8.0' )
+	s.add_runtime_dependency( 'rest-client', '>= 1.8')
 	s.add_runtime_dependency( 'parseconfig', '~> 1.0', '>=1.0.8' )
 	s.required_ruby_version = '>= 2.3.1'
 end
